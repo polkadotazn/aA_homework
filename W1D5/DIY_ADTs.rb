@@ -51,7 +51,7 @@ class Map
       @map << [key, value]
     else
       @map[idx][1] = value
-    end 
+    end
   end
 
   def lookup(key)
