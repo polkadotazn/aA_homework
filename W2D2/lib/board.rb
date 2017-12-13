@@ -42,10 +42,19 @@ class Board
       stones.pop
     end
     self.render
-    next_turn(cup_index)
+    next_turn(cup_index - 1)
   end
 
   def next_turn(ending_cup_idx)
+    ending_cup_idx = 13 if ending_cup_idx == -1
+    return @cups[ending_cup_idx]
+    if @cups[ending_cup_idx].length == 1
+      :switch
+    elsif ending_cup_idx == 13 || ending_cup_idx == 6
+      :prompt
+    else
+      ending_cup_idx
+    end
     # helper method to determine what #make_move returns
   end
 
