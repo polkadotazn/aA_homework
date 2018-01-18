@@ -161,8 +161,8 @@ View.prototype.exercise6 = function () {
   //your code here!
   $('.square').each( (idx, el) => {
     var $sq = $(el);
-    $sq.css("background-color", _randomColorString());
-  })
+    $sq.css("background-color", window._randomColorString());
+  });
 };
 
 View.prototype.exercise7 = function(){
