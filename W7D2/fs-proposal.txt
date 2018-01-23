@@ -1,0 +1,14 @@
+Full Stack Project Proposal
+
+(1) Untappd clone => “Cheeseboard”
+  1. New account creation, login, and guest/demo login
+  2. A production README
+  3. Hosting on Heroku
+  4. Cheese CRUD
+  5. Checkins(at the grocery store) / reviews(of cheese)
+  6. Cheese review feed(recent reviews of other users)
+  7. Profile (background or “how user came to be a cheese lover”)
+
+Backup:
+(2) 500px
+(3) Behance
