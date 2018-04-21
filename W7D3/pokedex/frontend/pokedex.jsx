@@ -6,10 +6,10 @@ import configureStore from './store/store';
 
 document.addEventListener('DOMContentLoaded', () => {
   const store = configureStore();
-  const rootE1 = document.getElementById('root');
+  const root = document.getElementById('root');
   window.getState = store.getState;
   window.dispatch = store.dispatch;
-  ReactDOM.render(<h1>Pokedex</h1>, rootE1);
+  ReactDOM.render(<Root store={store}/>, root);
 });
 
 window.receiveAllPokemon = receiveAllPokemon;
