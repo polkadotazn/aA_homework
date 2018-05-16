@@ -37,10 +37,66 @@ require('es6-promise');
 
 // (5) Always asynchronous
 
-var promise = new Promise (function(fulfill, reject) {
-  fulfill('PROMISE VALUE');
+// var promise = new Promise (function(fulfill, reject) {
+//   fulfill('PROMISE VALUE');
+// });
+//
+//
+// promise.then(console.log);
+// console.log("MAIN PROGRAM");
+
+
+// (6) Shortcuts
+
+var message;
+var promise;
+
+promise = Promise.resolve('Secret val');
+
+promise.catch(err => {
+  console.error('error');
 });
 
 
-promise.then(console.log);
-console.log("MAIN PROGRAM");
+// (7) Promise after promise
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//
