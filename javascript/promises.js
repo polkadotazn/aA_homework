@@ -47,18 +47,31 @@ require('es6-promise');
 
 
 // (6) Shortcuts
-
-var message;
-var promise;
-
-promise = Promise.resolve('Secret val');
-
-promise.catch(err => {
-  console.error('error');
-});
+//
+// var message;
+// var promise;
+//
+// promise = Promise.resolve('Secret val');
+//
+// promise.catch(err => {
+//   console.error('error');
+// });
 
 
 // (7) Promise after promise
+
+// first().then(second).then(console.log);
+
+// (8) Values and promises
+
+var attachTitle = function(firstargument) {
+  return `DR. ${firstargument}`;
+};
+
+Promise.resolve('MANHATTAN').then(attachTitle).then(console.log);
+
+
+
 
 
 
